@@ -1,15 +1,16 @@
 
 <div align="center">
  
-![Alt text](Main image/1.png)
+
+<img src="https://github.com/lcurryh/ncurryh/blob/main/Main%20image/1ttttttt.jpg" alt="ddq_arch" width="700">
 
 
-<img src="https://sm.ms/image/FdAOnERZ7SH9xIK" width="310px">
+
 
  
 </div>
 
-# Upgrading Swin-B Transformer-Based Model for Accurately Identifying Ripe Strawberries by Coupling Task-Aligned One-Stage Object Detection Mechanism
+# DIMD-DETR: DDQ-DETR with Improved Metric space for End-to-End Object Detector on Remote Sensing Aircraft
 
 <div align="center">
 
@@ -26,17 +27,17 @@
         <i><font size="4">TRY IT OUT</font></i>
       </a>
     </sup>
-    <b><font size="5">NVIDIA Tesla P100</font></b>
+    <b><font size="5">GeForce RTX 3090</font></b>
     <sup>
       <a href="https://www.nvidia.cn/data-center/tesla-p100/">
         <i><font size="4">GET IT</font></i>
       </a>
     </sup>
 
-  ![](https://img.shields.io/badge/python-3.7-red)
-  [![](https://img.shields.io/badge/pytorch-1.10-red)](https://pytorch.org/)
+  ![](https://img.shields.io/badge/python-3.8.18-red)
+  [![](https://img.shields.io/badge/pytorch-1.10.1-red)](https://pytorch.org/)
   [![](https://img.shields.io/badge/torchvision-0.11.0-red)](https://pypi.org/project/torchvision/)
-  [![](https://img.shields.io/badge/MMDetection-2.28.2-red)](https://github.com/open-mmlab/)
+  [![](https://img.shields.io/badge/MMDetection-3.3.0-red)](https://github.com/open-mmlab/)
   
   
 
@@ -45,23 +46,22 @@
  
   [👀Download Dataset](https://pan.baidu.com/s/16QgjgUCHFKQfsVm3-P1agg )) |
   
-  [🌊a Simple Anchor alignment metric](https://github.com/0811yu/0811yu.github.io) |
-  [🚀Small Object detection improved](https://github.com/0811yu/0811yu.github.io) |
-  
-  [🤔Model generalization ability improved](https://github.com/0811yu/0811yu.github.io) |
+  [🌊Aircraft Detection](https://github.com/lcurryh/ncurryh/tree/main/DIMD-DETR%20DDQ-DETR%20with%20Improved%20Metric%20space%20for%20End-to-End%20Object%20Detector%20on%20Remote%20Sensing%20Aircraft) |
+  [🚀Remote Sensing](https://github.com/lcurryh/ncurryh/tree/main/DIMD-DETR%20DDQ-DETR%20with%20Improved%20Metric%20space%20for%20End-to-End%20Object%20Detector%20on%20Remote%20Sensing%20Aircraft) |
+  [🤔End-to-End](https://github.com/lcurryh/ncurryh/tree/main/DIMD-DETR%20DDQ-DETR%20with%20Improved%20Metric%20space%20for%20End-to-End%20Object%20Detector%20on%20Remote%20Sensing%20Aircraft) |
  
 
 </div>
 
 ## Dependencies:
 
- - Python 3.7
- - [PyTorch](https://pytorch.org/) 1.10
- - [Torchvision](https://pypi.org/project/torchvision/) 0.11.0
- - [OpenCV](https://opencv.org/) 4.7.0
+ - Python 3.8.18
+ - [PyTorch](https://pytorch.org/) 1.10.1
+ - [Torchvision](https://pypi.org/project/torchvision/) 0.11.2
+ - [OpenCV](https://opencv.org/) 4.8.1
  - Ubuntu 20.04.5 LTS 
  - [MMCV](https://github.com/open-mmlab/mmcv)
- - NVIDIA Tesla P100
+ - GeForce RTX 3090
    
 
 ## Introduction
