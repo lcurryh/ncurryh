@@ -100,15 +100,17 @@ Ablation experiments on the remote sensing aircraft detection frameworks, where 
 </div>
 
 ### Metric space-based loss function
-Comparative analysis of different classification, regularization, and IOU methods on the MDMF dataset.
+**Comparative analysis of different classification, regularization, and IOU methods on the MDMF dataset.**
 <div align="center">
 <img src="https://github.com/lcurryh/ncurryh/blob/main/Main%20image/33.png" alt="ddq_arch" width="700">
 </div>
-The contribution of classification (GHMC), regularization (Smooth L1), and IOU (SIOU) techniques in enhancing remote sensing aircraft detection tasks.
+
+**The contribution of classification (GHMC), regularization (Smooth L1), and IOU (SIOU) techniques in enhancing remote sensing aircraft detection tasks.**
 <div align="center">
 <img src="https://github.com/lcurryh/ncurryh/blob/main/Main%20image/44.png" alt="ddq_arch" width="700">
 </div>
 
+the effects of classification (GHMC), regularization (Smooth L1), and IOU techniques (SIOU) on enhancing detection performance. In the baseline scenario without any techniques, the AP was 64.7%, and AP50 was 91.7%. When combining GHMC and SIOU, the AP and AP50 increased to 65.4% and 92.3%, respectively. Combining GHMC and Smooth L1 further improved these metrics to 65.6% and 92.6%. The combination of SIOU and Smooth L1 resulted in AP and AP50 values of 65.8% and 92.9%, respectively. When all three techniques were combined, the AP reached a maximum of 66.1%, and AP50 increased to 93.5%, demonstrating the most significant performance enhancement. This indicates that Smooth L1 contributed the most to performance improvement, especially when used in conjunction with other techniques. This is attributed to the contribution ratios of classification, regularization, and IOU being set at 1:5:2, making Smooth L1 regularization predominant in enhancing performance. We also attempted to adjust these ratios, but the results were suboptimal, confirming that the original ratio yielded the best performance.
 ## Feature enhancementh
 
 Without enhancement preprocessing, the small airplane at position 'w' in  (b) was not detected, whereas it was successfully located in  (a). Additionally, in  (b), positions 'v' and 'u' mistakenly identified the shadow of the airplane as the aircraft itself, whereas  these objects was accurately detected in  (a). It indicated that applying feature enhancement on objects with the fine-scale features significantly improves the model's detection performance.
@@ -129,13 +131,15 @@ The detection performance of various single-stage, two-stage, and end-to-end net
 <div align="center">
 <img src="https://github.com/lcurryh/ncurryh/blob/main/Main%20image/22.png" alt="ddq_arch" width="700">
 </div>
-Comparison of detection results using different models on the MDMF dataset. Notably, models marked with  the right superscripts of the asterisk (*) and the hash (#)belong to the two-stage and the end-to-end networks, respectively, while those without any notation indicate single-stage networks.
+
+**Comparison of detection results using different models on the MDMF dataset. Notably, models marked with  the right superscripts of the asterisk (*) and the hash (#)belong to the two-stage and the end-to-end networks, respectively, while those without any notation indicate single-stage networks.**
 
 we evaluated the performance of the highest precision single-stage, two-stage, and end-to-end networks on a remote sensing aircraft image in a complex scene. The results show that although YOLOV9-E has high detection precision, its ability to detect small targets is still limited, as it missed small targets at the locations 'u' and 'v'. Dynamic R-CNN demonstrated strong detection capabilities but also failed to detect the small target at location 'u', misidentified a building at location 'z' as an aircraft, and missed the aircraft at location 'w' due to interference. DINO-DETR also exhibited high detection precision but made a false detection at location 'z' in the complex scene and missed the aircraft at location 'w' under environmental interference, as well as the small target at location 'u'. In contrast, our model, specifically designed for remote sensing aircraft, successfully detected all targets, further highlighting its superiority to discovering the small targets.
 
 <div align="center">
 <img src="https://github.com/lcurryh/ncurryh/blob/main/Main%20image/7.jpg" alt="ddq_arch" width="700">
 </div>
+
 ## Overview of our network architecture
 A new end-to-end detection mechanism, DIMD-DETR, based on DDQ-DETR is developed, aiming at enhancing the accuracy of remote sensing aircraft recognition while balancing computing efficiency. The improvements include the use of the BLTP method to enhance the model's sensitivity to subtle scene changes; the incorporation of PVTV2 into the backbone network to boost detection capabilities; the design of a novel metric space loss function to optimize the model's prediction precision and accuracy; the use of the Albu library to reduce the model's tendency to overfit; and the introduction of a dynamic learning rate adjustment framework to ensure high accuracy while accelerating convergence.
 <div align="center">
