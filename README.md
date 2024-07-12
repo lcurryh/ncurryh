@@ -112,6 +112,21 @@ Ablation experiments on the remote sensing aircraft detection frameworks, where 
 
 the effects of classification (GHMC), regularization (Smooth L1), and IOU techniques (SIOU) on enhancing detection performance. In the baseline scenario without any techniques, the AP was 64.7%, and AP50 was 91.7%. When combining GHMC and SIOU, the AP and AP50 increased to 65.4% and 92.3%, respectively. Combining GHMC and Smooth L1 further improved these metrics to 65.6% and 92.6%. The combination of SIOU and Smooth L1 resulted in AP and AP50 values of 65.8% and 92.9%, respectively. When all three techniques were combined, the AP reached a maximum of 66.1%, and AP50 increased to 93.5%, demonstrating the most significant performance enhancement. This indicates that Smooth L1 contributed the most to performance improvement, especially when used in conjunction with other techniques. This is attributed to the contribution ratios of classification, regularization, and IOU being set at 1:5:2, making Smooth L1 regularization predominant in enhancing performance. We also attempted to adjust these ratios, but the results were suboptimal, confirming that the original ratio yielded the best performance.
 ## Feature enhancementh
+To enhance the generalization of our model, we employed the popular Albu library  to increase the diversity of our training samples. This library offers a rich array of data augmentation techniques, including over 70 different structured image transformation methods. By incorporating variations such as rotation, cropping, flipping, and scaling, we can reduce the risk of model overfitting. Furthermore, through advanced techniques such as brightness and contrast adjustments, noise injection, and color transformations, the model can adapt to various lighting and meteorological conditions. Additionally, specialized enhancements like elastic transformations and grid distortion improve the accuracy of object detection by simulating different perspectives and scale changes. Our objective is to expand the application of our aircraft detection algorithm to a broader range of training scenarios. The related techniques employed include:
+
+1）RGB Shift: Randomly alters the order of the image color channels, enhancing the model's adaptability to color variations.
+
+2）Shift Scale Rotate: Applies affine transformations to images, including translation, scaling, and rotation, enhancing the model's robustness to changes in target position and scale.
+	
+3）Hue Saturation Value: Randomly adjusts the hue and saturation of images, helping the model better adapt to different environments and scenes.
+
+4）	Random Brightness Contrast: Randomly adjusts the brightness and contrast of images to improve the model's adaptability to various lighting conditions.
+
+5）Channel Shuffle: Randomly shuffles the RGB channels of images, adjusting the color distribution to help the model better recognize different color display methods.
+
+6）Elastic Transform: Simulates the effect of images being distorted by elastic materials, aiding the model in learning to recognize non-rigid deformations that may be encountered in practical applications.
+
+7）Grid Distortion: Distorts images by periodically or randomly moving grid points, simulating camera lens distortions or other visual distortions, and training the model to identify objects in deformed visual inputs.
 
 Without enhancement preprocessing, the small airplane at position 'w' in  (b) was not detected, whereas it was successfully located in  (a). Additionally, in  (b), positions 'v' and 'u' mistakenly identified the shadow of the airplane as the aircraft itself, whereas  these objects was accurately detected in  (a). It indicated that applying feature enhancement on objects with the fine-scale features significantly improves the model's detection performance.
 <div align="center">
