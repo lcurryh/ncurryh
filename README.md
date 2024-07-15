@@ -2,7 +2,7 @@
 <div align="center">
  
 
-<img src="https://github.com/lcurryh/ncurryh/blob/main/Main%20image/1ttttttt.jpg" alt="ddq_arch" width="700">
+<img src="https://github.com/lcurryh/ncurryh/blob/main/Main%20image/1ttttttt.jpg" alt="ddq_arch" width="200">
 
 
 
@@ -70,6 +70,12 @@ this paper proposes an end-to-end remote sensing aircraft detection method based
 
 <div align="center">
 <img src="https://github.com/lcurryh/ncurryh/blob/main/Main%20image/2.png" alt="ddq_arch" width="700">
+</div>
+
+## Overview of our network architecture
+A new end-to-end detection mechanism, DIMD-DETR, based on DDQ-DETR is developed, aiming at enhancing the accuracy of remote sensing aircraft recognition while balancing computing efficiency. The improvements include the use of the BLTP method to enhance the model's sensitivity to subtle scene changes; the incorporation of PVTV2 into the backbone network to boost detection capabilities; the design of a novel metric space loss function to optimize the model's prediction precision and accuracy; the use of the Albu library to reduce the model's tendency to overfit; and the introduction of a dynamic learning rate adjustment framework to ensure high accuracy while accelerating convergence.
+<div align="center">
+<img src="https://github.com/lcurryh/ncurryh/blob/main/Main%20image/3.jpg" alt="ddq_arch" width="700">
 </div>
 
 ## Ours Aircraft dataset
@@ -155,11 +161,7 @@ we evaluated the performance of the highest precision single-stage, two-stage, a
 <img src="https://github.com/lcurryh/ncurryh/blob/main/Main%20image/7.jpg" alt="ddq_arch" width="700">
 </div>
 
-## Overview of our network architecture
-A new end-to-end detection mechanism, DIMD-DETR, based on DDQ-DETR is developed, aiming at enhancing the accuracy of remote sensing aircraft recognition while balancing computing efficiency. The improvements include the use of the BLTP method to enhance the model's sensitivity to subtle scene changes; the incorporation of PVTV2 into the backbone network to boost detection capabilities; the design of a novel metric space loss function to optimize the model's prediction precision and accuracy; the use of the Albu library to reduce the model's tendency to overfit; and the introduction of a dynamic learning rate adjustment framework to ensure high accuracy while accelerating convergence.
-<div align="center">
-<img src="https://github.com/lcurryh/ncurryh/blob/main/Main%20image/3.jpg" alt="ddq_arch" width="700">
-</div>
+
 
 
 
